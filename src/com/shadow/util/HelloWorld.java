@@ -12,6 +12,8 @@ import com.shadow.page.Doubishadowsocks;
 import com.shadow.page.Ishadowsocks;
 
 public class HelloWorld {
+	public static String ssFile = "D:\\fanqiang\\Shadowsocks.exe";
+
 	public static void main(String[] args) throws IOException {
 		ShadowTotalBean shadowTotalBean = new ShadowTotalBean();
 		ArrayList<ShadowInfoBean> beans = new ArrayList<ShadowInfoBean>();
@@ -24,5 +26,7 @@ public class HelloWorld {
 		shadowTotalBean.setConfigs(beans);
 		String text = JSON.toJSONString(shadowTotalBean);
 		IOUtil.fileWriterHandle("D:/fanqiang/gui-config.json", text);
+		IOUtil.doExe(ssFile);
 	}
+
 }

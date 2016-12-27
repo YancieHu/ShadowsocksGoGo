@@ -6,7 +6,7 @@ public class SplitElement {
 	public static String work(Element element) {
 		if (element != null) {
 			String lala = element.text();
-			String[] strings = lala.split("£º");
+			String[] strings = lala.split("ï¼š");
 			if(strings.length<2){
 				strings=lala.split(":");
 			}

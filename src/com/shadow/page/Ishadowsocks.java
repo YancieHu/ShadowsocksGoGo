@@ -30,7 +30,7 @@ public class Ishadowsocks extends ShadowPage {
 			Document doc = HttpHeader
 					.init(Jsoup.connect("http://www.ishadowsocks.info/"))
 					.ignoreHttpErrors(true).get();
-			Elements elements = doc.select("div.col-sm-4.text-center"); // 带有href属性的a元素
+			Elements elements = doc.select("div.col-sm-4.text-center"); // 甯︽湁href灞炴�х殑a鍏冪礌
 			for (int i = 0; i < elements.size(); i++) {
 				Element element = elements.get(i);
 				Elements elements2 = element.select("h4");

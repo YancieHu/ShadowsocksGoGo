@@ -10,7 +10,7 @@ import java.io.PrintWriter;
 
 public class IOUtil {
 	/**
-	 * ½«ÎÄ¼ş¶ÁÈëµ½Ò»¸öString£¬ÀûÓÃFileReader+BufferedReader(Ìá¹©readLine·½·¨)
+	 * å°†æ–‡ä»¶è¯»å…¥åˆ°ä¸€ä¸ªStringï¼Œåˆ©ç”¨FileReader+BufferedReader(æä¾›readLineæ–¹æ³•)
 	 * 
 	 * @param fileName
 	 * @return String
@@ -37,7 +37,7 @@ public class IOUtil {
 	}
 
 	/**
-	 * Ê¹ÓÃFileInputStream+BufferedInputStreamÒÔbyteµÄ·½Ê½´¦ÀíÎÄ¼ş
+	 * ä½¿ç”¨FileInputStream+BufferedInputStreamä»¥byteçš„æ–¹å¼å¤„ç†æ–‡ä»¶
 	 * 
 	 * @param fileName
 	 * @return byte[]
@@ -61,15 +61,14 @@ public class IOUtil {
 	}
 
 	/**
-	 * ½«Ö¸¶¨µÄtextĞ´Èëµ½ÎÄ¼şÃûÎªfileNameµÄÎÄ¼şÖĞ
+	 * å°†æŒ‡å®šçš„textå†™å…¥åˆ°æ–‡ä»¶åä¸ºfileNameçš„æ–‡ä»¶ä¸­
 	 * 
 	 * @param fileName
 	 * @param text
 	 */
 	public static void fileWriterHandle(String fileName, String text) {
 		try {
-			PrintWriter out = new PrintWriter(
-					new File(fileName));
+			PrintWriter out = new PrintWriter(new File(fileName));
 			try {
 				out.print(text);
 			} finally {
@@ -79,6 +78,23 @@ public class IOUtil {
 			throw new RuntimeException(e);
 		}
 	}
+
+	/**
+	 * è¿è¡Œexeæ–‡ä»¶
+	 */
+	public static void doExe(String fileName) {
+		Runtime rt = Runtime.getRuntime();
+		try {
+			rt.exec(fileName);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void co(){
+		
+	}
+	
 
 	public static void main(String[] args) throws IOException {
 		fileWriterHandle("D:/zj.txt",

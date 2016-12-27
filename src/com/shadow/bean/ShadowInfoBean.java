@@ -1,11 +1,11 @@
 package com.shadow.bean;
 
 public class ShadowInfoBean {
-	private String server;// ·şÎñÆ÷ip
-	private int server_port;// ¶Ë¿ÚºÅ
-	private String password;// ÃÜÂë
-	private String method;// Á¬½Ó·½Ê½
-	private String remarks;// Ãû×Ö
+	private String server;// æœåŠ¡å™¨ip
+	private int server_port;// ç«¯å£å·
+	private String password;// å¯†ç 
+	private String method;// è¿æ¥æ–¹å¼
+	private String remarks;// åå­—
 
 	public String getServer() {
 		return server;

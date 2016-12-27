@@ -30,7 +30,7 @@ public class Freessr extends ShadowPage {
 			Document doc = HttpHeader
 					.init(Jsoup.connect("https://freessr.xyz/"))
 					.ignoreHttpErrors(true).get();
-			Elements elements = doc.select("div.row").get(0).select("div"); // ´øÓÐhrefÊôÐÔµÄaÔªËØ
+			Elements elements = doc.select("div.row").get(0).select("div"); // å¸¦æœ‰hrefå±žæ€§çš„aå…ƒç´ 
 			for (int i = 0; i < elements.size(); i++) {
 				Element element = elements.get(i);
 				Elements elements2 = element.select("h4");
@@ -57,7 +57,7 @@ public class Freessr extends ShadowPage {
 	public static String split(Element element) {
 		if (element != null) {
 			String lala = element.text();
-			String[] strings = lala.split("£º");
+			String[] strings = lala.split("ï¼š");
 			return strings[1];
 		}
 		return "";

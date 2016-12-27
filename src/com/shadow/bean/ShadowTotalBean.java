@@ -15,8 +15,8 @@ public class ShadowTotalBean {
 	private boolean useOnlinePac;
 
 	public ShadowTotalBean() {
-		// strategy = "com.shadowsocks.strategy.balancing";// ¸ºÔØ¾ùºâ
-		strategy = "com.shadowsocks.strategy.ha";// ¸ß¿ÉÓÃ
+		// strategy = "com.shadowsocks.strategy.balancing";// è´Ÿè½½å‡è¡¡
+		strategy = "com.shadowsocks.strategy.ha";// é«˜å¯ç”¨
 		index = -1;
 		global = false;
 		enabled = true;

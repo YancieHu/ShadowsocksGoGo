@@ -29,7 +29,7 @@ public class Freevpnss extends ShadowPage {
 			Document doc = HttpHeader
 					.init(Jsoup.connect("https://freevpnss.cc/"))
 					.ignoreHttpErrors(true).get();
-			Elements elements = doc.getElementsMatchingOwnText("·şÎñÆ÷");
+			Elements elements = doc.getElementsMatchingOwnText("æœåŠ¡å™¨");
 			for (int i = 0; i < elements.size(); i++) {
 				Element element = elements.get(i);
 				Elements childNodes = element.parent().children();

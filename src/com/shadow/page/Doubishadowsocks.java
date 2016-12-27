@@ -26,7 +26,7 @@ public class Doubishadowsocks extends ShadowPage {
 			Document doc = HttpHeader
 					.init(Jsoup.connect("https://www.dou-bi.co/sszhfx/"))
 					.ignoreHttpErrors(true).get();
-			Elements elements = doc.select("tbody").get(0).select("tr"); // 带有href属性的a元素
+			Elements elements = doc.select("tbody").get(0).select("tr"); // 甯︽湁href灞炴�х殑a鍏冪礌
 			for (int i = 0; i < elements.size(); i++) {
 				Elements elements2 = elements.get(i).select("td");
 				if (elements2.size() == 6) {
