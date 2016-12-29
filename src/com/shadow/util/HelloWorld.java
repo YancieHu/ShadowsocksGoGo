@@ -13,10 +13,11 @@ import com.shadow.page.Ishadowsocks;
 
 public class HelloWorld {
 	public static String rootFile = "D:/fanqiang";
-	public static String ssFile = rootFile+"/Shadowsocks.exe";
-	public static String cfFile = rootFile+"/gui-config.json";
+	public static String ssFile = rootFile + "/Shadowsocks.exe";
+	public static String cfFile = rootFile + "/gui-config.json";
 
 	public static void main(String[] args) throws IOException {
+		IOUtil.closeExe();
 		ShadowTotalBean shadowTotalBean = new ShadowTotalBean();
 		ArrayList<ShadowInfoBean> beans = new ArrayList<ShadowInfoBean>();
 		// ////////////////

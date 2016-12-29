@@ -91,8 +91,13 @@ public class IOUtil {
 		}
 	}
 	
-	public static void co(){
-		
+	
+	public static void closeExe(){
+		try {
+			Runtime.getRuntime().exec("tskill Shadowsocks");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 
