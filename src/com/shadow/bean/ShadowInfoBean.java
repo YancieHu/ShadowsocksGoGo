@@ -23,6 +23,10 @@ public class ShadowInfoBean {
 		this.server_port = server_port;
 	}
 
+	public void setServer_port(String server_port) {
+		this.server_port = Integer.parseInt(server_port);
+	}
+
 	public String getPassword() {
 		return password;
 	}

@@ -13,6 +13,6 @@ public class HttpHeader {
 				.header("Referer", "https://www.baidu.com/")
 				.header("User-Agent",
 						"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0")
-				.timeout(20000);
+				.timeout(3000);
 	}
 }
